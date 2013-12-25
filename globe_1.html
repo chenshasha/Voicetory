@@ -1,0 +1,53 @@
+<!DOCTYPE  html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="google-translate-customization" content="dd6dc8d31eae27c9-1af41dda936d789b-g8a2fe6bb665c9411-1d"></meta>
+<meta name=”description” content=”CityStory is an application to time travel through photos of cities and consolidation of vacation spots”></meta>
+        <title>CityStory</title>
+
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  
+  <!-- Change the key below to your own Maps API key -->
+  <script type="text/javascript" src="http://www.google.com/jsapi?hl=en&amp;key=ABQIAAAAwbkbZLyhsmTCWXbTcjbgbRSzHs7K5SvaUdm8ua-Xxy_-2dYwMxQMhnagaawTo7L1FE1-amhuQxIlXw"></script>
+  <script type="text/javascript" src="js/globe_function.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script>
+  google.load("earth", "1");
+  </script>
+        <style>
+            .google_earth {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body onload="if(window.prettyPrint)prettyPrint();init();">
+	
+	
+
+    <!-- ENDS Image buttons -->
+    			
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+		<ul class="nav navbar-nav">
+			<li><img src="images/logo.jpeg" alt="Citystory" width="100" height="100"></li>
+			<li class="active"><a href="globe.html">Globe</a></li>
+			<li><a href="profile.php">Profile</a></li>
+			<li><a href="albums.php">Albums</a></li>
+			<li><a href="fileupload.php">Upload</a></li>
+			<li><a href="https://www.surveymonkey.com/s/FBSYGL5">Feedback</a></li>
+                        <li><a href="logoff.php">Sign Off</a></li></ul>
+			<li><a href="https://www.facebook.com/citystorysf"title="Become a fan"><img src="facebook.jpeg" height="50" width="50"></a></li>
+			</nav>
+		
+        
+    	<div id="map3d" class = "google_earth"></div>
+	 </body>
+</html>
